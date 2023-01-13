@@ -21,11 +21,10 @@ public class AnimeController {
         this.dateUtil = dateUtil;
     }
 
-
     @GetMapping(path = "list")
     public List <Anime> list(){
         log.info(dateUtil.formatLocalDateTimeToDatabaseStyle(LocalDateTime.now()));
 
-        return List.of(new Anime("DBZ"), new Anime("Attack On Titan"));
+        return List.of(new Anime("DB-GT"), new Anime("Attack On Titan"));
     }
 }
