@@ -18,7 +18,7 @@ import java.util.List;
 @Log4j2
 @RequiredArgsConstructor
 public class AnimeController {
-    private DateUtil dateUtil;
+    private final DateUtil dateUtil;
     private final AnimeService animeService;
 
 
